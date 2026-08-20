@@ -1,0 +1,43 @@
+[
+  {
+    "query_id": "q1",
+    "query": "What is the latest GST reimbursement order?",
+    "intent": "CURRENT_POLICY",
+    "expected_documents": ["GO(P) No.245/2025/Fin"],
+    "expected_clauses": ["GO(P) No.245/2025/Fin#4.2"],
+    "expected_status": "ACTIVE",
+    "expected_financial_figures": ["18%"]
+  },
+  {
+    "query_id": "q2",
+    "query": "Which order superseded GO(P) No.155/2024/Fin?",
+    "intent": "DOCUMENT_LINEAGE",
+    "expected_documents": ["GO(P) No.245/2025/Fin"],
+    "expected_clauses": ["GO(P) No.245/2025/Fin#4.2"],
+    "expected_status": "ACTIVE"
+  },
+  {
+    "query_id": "q3",
+    "query": "What was the previous GST reimbursement limit under GO(P) No.155/2024/Fin?",
+    "intent": "VERSION_COMPARISON",
+    "expected_documents": ["GO(P) No.155/2024/Fin"],
+    "expected_clauses": ["GO(P) No.155/2024/Fin#3.1"],
+    "expected_status": "SUPERSEDED",
+    "expected_financial_figures": ["12%"]
+  },
+  {
+    "query_id": "q4",
+    "query": "What is the capital expenditure financial sanction limit for departmental heads?",
+    "intent": "FINANCIAL_FIGURE_LOOKUP",
+    "expected_documents": ["Circular No.45/2025/Fin"],
+    "expected_clauses": ["Circular No.45/2025/Fin#2.1"],
+    "expected_financial_figures": ["₹15,00,00,000"]
+  },
+  {
+    "query_id": "q5",
+    "query": "Show GST exemption notifications for public health procurement.",
+    "intent": "GST_RESEARCH",
+    "expected_documents": ["Notification No.98/2025/Fin"],
+    "expected_status": "ACTIVE"
+  }
+]

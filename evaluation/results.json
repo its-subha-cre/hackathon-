@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-19T21:48:57Z",
+  "total_queries_evaluated": 5,
+  "dataset_size": 24,
+  "recall_at_5": 1.0,
+  "mrr": 1.0,
+  "citation_accuracy": 0.8,
+  "lineage_accuracy": 0.8,
+  "unauthorized_retrieval_rate": 0.0,
+  "average_latency_ms": 0.2,
+  "duration_seconds": 0.003,
+  "benchmark_status": "PASSING_ALL_GROUND_TRUTH_TESTS"
+}
